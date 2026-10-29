@@ -163,6 +163,35 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // API: AI Celebration Agent Assistant (Vercel AI SDK)
+  if (pathname === '/api/ai/agent' && method === 'POST') {
+    let body = '';
+    req.on('data', chunk => { body += chunk; });
+    req.on('end', async () => {
+      try {
+        const payload = JSON.parse(body || '{}');
+        const prompt = payload.prompt || 'Craft a heartwarming celebration wish for a special person.';
+
+        let agentModule;
+        try {
+          agentModule = require('./agent.js');
+        } catch (e) {
+          res.writeHead(503, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ success: false, error: 'AI SDK dependencies not installed. Run: npm install ai zod' }));
+          return;
+        }
+
+        const agentResponse = await agentModule.runCelebrationAgent(prompt, payload.options);
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify(agentResponse));
+      } catch (err) {
+        res.writeHead(400, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: false, error: err.message }));
+      }
+    });
+    return;
+  }
+
   // API: Get Music Library
   if (pathname === '/api/music' && method === 'GET') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
