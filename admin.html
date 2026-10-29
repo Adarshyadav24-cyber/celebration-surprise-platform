@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>✦ Celebration & Surprise Studio • 3D Celebration Platform</title>
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg-deep: #090314;
+  --bg-card: rgba(24, 11, 38, 0.82);
+  --border-card: rgba(255, 140, 205, 0.22);
+  --accent-pink: #ff60ad;
+  --accent-purple: #b353f7;
+  --accent-gold: #ffd166;
+  --text-main: #fff0fa;
+  --text-muted: #e5cde3;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+  --transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+*, *::before, *::after {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  padding: 30px 20px 80px;
+  background-image:
+    radial-gradient(ellipse at 15% 15%, rgba(179, 83, 247, 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 15%, rgba(255, 96, 173, 0.2) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 85%, rgba(255, 209, 102, 0.1) 0%, transparent 60%);
+  background-attachment: fixed;
+}
+
+.studio-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* Header */
+.studio-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.studio-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 209, 102, 0.12);
+  border: 1px solid rgba(255, 209, 102, 0.4);
+  color: var(--accent-gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.studio-title {
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(38px, 6vw, 62px);
+  color: #ffdeec;
+  text-shadow: 0 0 20px rgba(255, 96, 173, 0.4);
+}
+
+.studio-nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0 35px;
+  flex-wrap: wrap;
+}
+
+.nav-tab-btn {
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 140, 205, 0.3);
+  background: rgba(30, 12, 45, 0.65);
+  color: #ffdff2;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-tab-btn.active {
+  background: linear-gradient(135deg, #ff4b98, #9333ea);
+  border-color: var(--accent-gold);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 75, 152, 0.45);
+}
+
+/* Glass Panels */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: clamp(20px, 3.5vw, 38px);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 96, 173, 0.12);
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 140, 205, 0.2);
+}
+
+/* Category Filter Pills */
+.category-filter-bar {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  scrollbar-width: thin;
+}
+
+.cat-pill-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 140, 205, 0.25);
+  background: rgba(22, 8, 34, 0.7);
+  color: #ffdff0;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.cat-pill-btn.active {
+  background: linear-gradient(135deg, #ff4b98, #a855f7);
+  border-color: var(--accent-gold);
+  color: #fff;
+}
+
+/* Occasions Grid */
+.occasions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: 6px;
+  margin-bottom: 25px;
+}
+
+.occasion-card {
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 140, 205, 0.25);
+  background: rgba(20, 8, 32, 0.6);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.occasion-card:hover {
+  background: rgba(255, 96, 173, 0.2);
+  border-color: var(--accent-pink);
+  transform: translateY(-2px);
+}
+
+.occasion-card.active {
+  border-color: var(--accent-gold);
+  background: linear-gradient(135deg, rgba(255, 96, 173, 0.28), rgba(179, 83, 247, 0.35));
+  box-shadow: 0 0 18px rgba(255, 209, 102, 0.3);
+}
+
+.occ-name { font-size: 13px; font-weight: 600; color: #fff; }
+.occ-meta { font-size: 10px; color: var(--accent-gold); }
+
+/* Form Fields */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+@media (max-width: 800px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffd4eb;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 140, 205, 0.3);
+  background: rgba(16, 6, 26, 0.85);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  outline: none;
+  transition: var(--transition);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--accent-pink);
+  box-shadow: 0 0 18px rgba(255, 96, 173, 0.35);
+}
+
+.form-textarea { resize: vertical; min-height: 80px; }
+
+/* Photo Uploader Multi */
+.photo-multi-box {
+  border: 2px dashed rgba(255, 140, 205, 0.35);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  background: rgba(16, 6, 26, 0.5);
+  text-align: center;
+}
+
+.photo-thumbnails-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.photo-thumb-card {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid rgba(255, 140, 205, 0.3);
+  aspect-ratio: 1;
+  background: #11051c;
+}
+
+.photo-thumb-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-thumb-del {
+  position: absolute;
+  top: 4px; right: 4px;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.85);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* Music Selector */
+.music-track-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 14px;
+}
+
+.track-item-card {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 140, 205, 0.25);
+  background: rgba(20, 8, 32, 0.6);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+
+.track-item-card.active {
+  border-color: var(--accent-gold);
+  background: rgba(255, 96, 173, 0.22);
+}
+
+/* Generate Button */
+.btn-generate {
+  width: 100%;
+  padding: 16px 32px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 209, 102, 0.6);
+  background: linear-gradient(135deg, #ff4b98 0%, #d946ef 50%, #f59e0b 100%);
+  color: #1a0522;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(255, 75, 152, 0.5);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-generate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(255, 75, 152, 0.7);
+}
+
+/* Result Modal */
+.result-card {
+  display: none;
+  background: linear-gradient(135deg, rgba(38, 14, 56, 0.95), rgba(18, 6, 30, 0.98));
+  border: 1px solid var(--accent-gold);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  text-align: center;
+  margin-top: 25px;
+  animation: fadeIn 0.4s ease;
+}
+
+.result-card.show { display: block; }
+
+.link-row {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .link-row { flex-direction: column; }
+}
+
+.link-input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 209, 102, 0.5);
+  background: rgba(12, 4, 20, 0.9);
+  color: #ffd166;
+  font-size: 13px;
+  font-family: monospace;
+  outline: none;
+  width: 100%;
+}
+
+.btn-action {
+  padding: 11px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 140, 205, 0.35);
+  background: rgba(45, 18, 68, 0.7);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.btn-action.btn-gold {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border-color: #ffd166;
+  color: #1a0522;
+  font-weight: 700;
+}
+
+/* Celebrations List */
+.celebrations-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.celebrations-table th,
+.celebrations-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 140, 205, 0.15);
+}
+
+.celebrations-table th {
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="studio-container">
+  <header class="studio-header">
+    <div class="studio-badge">✦ 3D CELEBRATION & LOVE PLATFORM ✦</div>
+    <h1 class="studio-title">Celebration Surprise Studio</h1>
+    <p style="color:var(--text-muted); font-size:14px; max-width:640px; margin:10px auto 0;">
+      Craft bespoke 3D interactive celebrations for birthdays, anniversaries, Valentine's week, and lifelong memories.
+    </p>
+
+    <!-- Navigation Tabs -->
+    <div class="studio-nav-tabs">
+      <button type="button" class="nav-tab-btn active" id="tab-create">
+        <span>✨</span> Create New Surprise
+      </button>
+      <button type="button" class="nav-tab-btn" id="tab-manage">
+        <span>📂</span> Manage Celebrations (<span id="saved-count">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <!-- VIEW 1: CREATE CELEBRATION -->
+  <div id="view-create">
+    <div class="glass-panel">
+      <!-- Step 1: Occasion Selection -->
+      <div class="section-title">
+        <span>1.</span> Select Occasion Category & Event
+      </div>
+
+      <div class="category-filter-bar" id="cat-filter-bar">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="occasions-grid" id="occasions-grid">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <form id="celebration-form" onsubmit="return false;">
+        <!-- Step 2: Recipient Details -->
+        <div class="section-title">
+          <span>2.</span> Personalization & Relationship
+        </div>
+
+        <div class="form-grid">
+          <div class="form-col">
+            <div class="form-group">
+              <label for="rec-name" class="form-label">
+                <span>👤</span> Recipient's Name <span style="color:var(--accent-pink);">*</span>
+              </label>
+              <input type="text" id="rec-name" class="form-input" placeholder="e.g. Riya, Rahul, Mom, Papa..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="rec-relationship" class="form-label">
+                <span>🌟</span> Relationship
+              </label>
+              <select id="rec-relationship" class="form-select">
+                <!-- Dynamically populated based on category -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rec-language" class="form-label">
+                <span>🌐</span> Preferred Language
+              </label>
+              <select id="rec-language" class="form-select">
+                <option value="en">English (Warm & Elegant)</option>
+                <option value="hinglish" selected>Hinglish (Natural & Expressive)</option>
+                <option value="hi">Hindi (Shuddh & Respectful)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-col">
+            <div class="form-group">
+              <label for="sender-name" class="form-label">
+                <span>✍️</span> Sender's Name (Optional)
+              </label>
+              <input type="text" id="sender-name" class="form-input" placeholder="e.g. Aman, Your Chhoti Behen, Rahul...">
+            </div>
+
+            <div class="form-group">
+              <label for="event-date" class="form-label">
+                <span>📅</span> Celebration Date (Optional)
+              </label>
+              <input type="date" id="event-date" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label for="custom-password" class="form-label">
+                <span>🔒</span> Custom Unlock Password (Optional)
+              </label>
+              <input type="text" id="custom-password" class="form-input" placeholder="Leave empty for recipient's date (DDMMYYYY)">
+            </div>
+
+            <div class="form-group">
+              <label for="personal-note" class="form-label">
+                <span>💌</span> Personal Note / Memory
+              </label>
+              <textarea id="personal-note" class="form-textarea" placeholder="Add an inside joke, special memory, or personal blessing..."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Photo Gallery Presentation -->
+        <div class="section-title" style="margin-top:20px;">
+          <span>3.</span> Photo Gallery & 3D Presentation Mode
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="gallery-mode" class="form-label">
+              <span>🖼️</span> Gallery Presentation Style
+            </label>
+            <select id="gallery-mode" class="form-select">
+              <option value="3d-carousel">3D Revolving Photo Carousel (Interactive)</option>
+              <option value="polaroid-wall">Floating Polaroid Memories Wall</option>
+              <option value="3d-cube-frames">3D Glowing Portrait Frames</option>
+              <option value="memory-timeline">Chronological Memory Journey</option>
+              <option value="photo-album">3D Flipping Photo Album</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span>📸</span> Upload Photographs (Multiple Allowed)
+            </label>
+            <div class="photo-multi-box">
+              <input type="file" id="multi-photo-input" multiple accept="image/*" style="display:none;">
+              <label for="multi-photo-input" class="btn-action" style="cursor:pointer;">
+                <span>📁</span> Select Photos from Computer / Phone
+              </label>
+              <p style="font-size:11px; color:#baa2b7; margin-top:8px;">
+                Upload multiple memorable photos. Max 8MB per photo.
+              </p>
+              <div class="photo-thumbnails-grid" id="photo-thumbnails"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Music Selection -->
+        <div class="section-title" style="margin-top:20px;">
+          <span>4.</span> Soundtrack & Music Selection
+        </div>
+
+        <div class="music-track-list" id="music-track-list">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Step 5: Bespoke Content Review -->
+        <div class="section-title" style="margin-top:20px;">
+          <span>5.</span> Review & Customize Occasion Messages
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Welcome Message</label>
+            <textarea id="msg-welcome" class="form-textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Main Heartfelt Wish</label>
+            <textarea id="msg-wish" class="form-textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Interactive Activity Prompt</label>
+            <textarea id="msg-activity" class="form-textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Final Celebration Blessing</label>
+            <textarea id="msg-final" class="form-textarea"></textarea>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="button" id="btn-create-link" class="btn-generate">
+          <span>✦</span> Generate 3D Celebration Surprise Link <span>➜</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Generated Link Result Card -->
+    <div id="result-box" class="result-card">
+      <div style="font-size:42px; margin-bottom:8px;">🎉</div>
+      <h2 style="font-family:'Dancing Script', cursive; font-size:36px; color:var(--accent-gold);">
+        Celebration Link Ready!
+      </h2>
+      <p style="color:var(--text-muted); font-size:14px; max-width:580px; margin:0 auto;">
+        Share this unique link with your recipient. Their 3D experience will open fully prepared with their photos, tailored wishes, interactive activities, and music!
+      </p>
+
+      <div class="link-row">
+        <input type="text" id="generated-url" class="link-input" readonly>
+        <button type="button" id="btn-copy-url" class="btn-action btn-gold">
+          <span>📋</span> Copy Link
+        </button>
+        <a id="btn-preview-url" href="#" target="_blank" class="btn-action">
+          <span>👁️</span> Preview
+        </a>
+      </div>
+
+      <div style="display:flex; justify-content:center; gap:12px; margin-top:15px; flex-wrap:wrap;">
+        <a id="btn-whatsapp-share" href="#" target="_blank" class="btn-action" style="background:#25d366; color:#0c2b14;">
+          <span>💬</span> Share via WhatsApp
+        </a>
+        <button type="button" id="btn-create-another" class="btn-action">
+          <span>↺</span> Create Another Celebration
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW 2: MANAGE CELEBRATIONS -->
+  <div id="view-manage" class="glass-panel" style="display:none;">
+    <div class="section-title">
+      <span>📂</span> Saved Celebrations Database
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="celebrations-table">
+        <thead>
+          <tr>
+            <th>Recipient</th>
+            <th>Occasion</th>
+            <th>Relationship</th>
+            <th>Created</th>
+            <th>Photos</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="celebrations-tbody">
+          <!-- Rendered dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="catalog.js"></script>
+<script>
+/**
+ * ✦ STUDIO CONTROLLER ✦
+ * Manages occasion switching, multi-photo handling, and backend link generation.
+ */
+
+const state = {
+  activeCategory: "birthdays",
+  activeOccasionId: "bday-general",
+  photos: [],
+  selectedTrackId: "track-bday-chime",
+  previewAudio: new Audio()
+};
+
+const RELATIONSHIP_OPTIONS = {
+  birthdays: [
+    "Brother", "Sister", "Mother", "Father", "Best Friend", "Close Friend",
+    "Partner", "Spouse", "Child", "Dear Special Person", "Uncle", "Aunty"
+  ],
+  anniversaries: [
+    "Spouse / Partner", "Parents", "Husband", "Wife", "Couple", "Friends"
+  ],
+  valentines: [
+    "Dear Special Person", "Love of My Life", "Partner", "Crush", "Fiancé/Fiancée"
+  ],
+  love: [
+    "Dear Special Person", "Love of My Life", "Partner", "Soulmate", "Crush"
+  ],
+  friendship: [
+    "Best Friend", "Close Friend", "School Friend", "College Friend", "Childhood Friend"
+  ],
+  family: [
+    "Mother", "Father", "Brother", "Sister", "Uncle", "Aunty", "Grandparents"
+  ],
+  celebrations: [
+    "Graduate", "Colleague", "Friend", "Brother", "Sister", "Loved One"
+  ]
+};
+
+// DOM references
+const catFilterBar = document.getElementById("cat-filter-bar");
+const occasionsGrid = document.getElementById("occasions-grid");
+const recRelationship = document.getElementById("rec-relationship");
+const recLanguage = document.getElementById("rec-language");
+const musicTrackList = document.getElementById("music-track-list");
+const multiPhotoInput = document.getElementById("multi-photo-input");
+const photoThumbnails = document.getElementById("photo-thumbnails");
+const msgWelcome = document.getElementById("msg-welcome");
+const msgWish = document.getElementById("msg-wish");
+const msgActivity = document.getElementById("msg-activity");
+const msgFinal = document.getElementById("msg-final");
+const btnCreateLink = document.getElementById("btn-create-link");
+const resultBox = document.getElementById("result-box");
+const generatedUrl = document.getElementById("generated-url");
+const btnCopyUrl = document.getElementById("btn-copy-url");
+const btnPreviewUrl = document.getElementById("btn-preview-url");
+const btnWhatsappShare = document.getElementById("btn-whatsapp-share");
+const btnCreateAnother = document.getElementById("btn-create-another");
+
+const tabCreate = document.getElementById("tab-create");
+const tabManage = document.getElementById("tab-manage");
+const viewCreate = document.getElementById("view-create");
+const viewManage = document.getElementById("view-manage");
+const celebrationsTbody = document.getElementById("celebrations-tbody");
+const savedCount = document.getElementById("saved-count");
+
+// Render category filter bar
+function initCategoryFilter() {
+  catFilterBar.innerHTML = "";
+  OCCASION_CATEGORIES.forEach(cat => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = `cat-pill-btn ${cat.id === state.activeCategory ? "active" : ""}`;
+    btn.innerHTML = `${cat.name}`;
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".cat-pill-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      state.activeCategory = cat.id;
+      renderOccasions();
+      updateRelationshipOptions();
+    });
+    catFilterBar.appendChild(btn);
+  });
+}
+
+// Render occasions for active category
+function renderOccasions() {
+  occasionsGrid.innerHTML = "";
+  const cat = OCCASION_CATEGORIES.find(c => c.id === state.activeCategory) || OCCASION_CATEGORIES[0];
+
+  cat.occasions.forEach((occ, idx) => {
+    const card = document.createElement("div");
+    card.className = `occasion-card ${occ.id === state.activeOccasionId ? "active" : ""}`;
+    card.innerHTML = `
+      <div class="occ-name">${occ.name}</div>
+      <div class="occ-meta">Activity: ${occ.activity}</div>
+    `;
+    card.addEventListener("click", () => {
+      document.querySelectorAll(".occasion-card").forEach(c => c.classList.remove("active"));
+      card.classList.add("active");
+      state.activeOccasionId = occ.id;
+      syncOccasionMessages();
+    });
+    occasionsGrid.appendChild(card);
+
+    if (idx === 0 && !cat.occasions.some(o => o.id === state.activeOccasionId)) {
+      state.activeOccasionId = occ.id;
+      card.classList.add("active");
+    }
+  });
+
+  syncOccasionMessages();
+}
+
+// Update relationship options
+function updateRelationshipOptions() {
+  recRelationship.innerHTML = "";
+  const opts = RELATIONSHIP_OPTIONS[state.activeCategory] || RELATIONSHIP_OPTIONS.birthdays;
+  opts.forEach(rel => {
+    const opt = document.createElement("option");
+    opt.value = rel;
+    opt.textContent = rel;
+    recRelationship.appendChild(opt);
+  });
+}
+
+// Sync messages based on active occasion & language
+function syncOccasionMessages() {
+  const lang = recLanguage.value || "hinglish";
+  const cfg = getOccasionConfig(state.activeOccasionId, state.activeCategory, lang);
+
+  msgWelcome.value = cfg.messages.welcome;
+  msgWish.value = cfg.messages.wish;
+  msgActivity.value = cfg.messages.activity;
+  msgFinal.value = cfg.messages.final;
+
+  // Auto select recommended music
+  state.selectedTrackId = cfg.music || "track-bday-chime";
+  renderMusicTracks();
+}
+
+recLanguage.addEventListener("change", syncOccasionMessages);
+
+// Render Music Library tracks
+function renderMusicTracks() {
+  musicTrackList.innerHTML = "";
+  MUSIC_LIBRARY.forEach(track => {
+    const card = document.createElement("div");
+    card.className = `track-item-card ${track.id === state.selectedTrackId ? "active" : ""}`;
+    card.innerHTML = `
+      <div>
+        <div style="font-size:12px; font-weight:600; color:#fff;">${track.title}</div>
+        <div style="font-size:10px; color:#cca6c8;">${track.artist} (${track.duration})</div>
+      </div>
+      <button type="button" class="btn-action" style="padding:4px 10px; font-size:11px;">
+        Preview 🔊
+      </button>
+    `;
+
+    card.addEventListener("click", (e) => {
+      if (e.target.tagName === "BUTTON") {
+        playTrackPreview(track.url);
+        return;
+      }
+      document.querySelectorAll(".track-item-card").forEach(c => c.classList.remove("active"));
+      card.classList.add("active");
+      state.selectedTrackId = track.id;
+    });
+
+    musicTrackList.appendChild(card);
+  });
+}
+
+function playTrackPreview(trackUrl) {
+  state.previewAudio.src = trackUrl;
+  state.previewAudio.play().catch(() => {});
+}
+
+// Multi-photo upload handling
+multiPhotoInput.addEventListener("change", (e) => {
+  const files = Array.from(e.target.files || []);
+  files.forEach(file => {
+    if (!file.type.startsWith("image/")) return;
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+      state.photos.push({
+        url: evt.target.result,
+        name: file.name
+      });
+      renderPhotoThumbnails();
+    };
+    reader.readAsDataURL(file);
+  });
+});
+
+function renderPhotoThumbnails() {
+  photoThumbnails.innerHTML = "";
+  state.photos.forEach((p, idx) => {
+    const div = document.createElement("div");
+    div.className = "photo-thumb-card";
+    div.innerHTML = `
+      <img src="${p.url}" alt="Thumbnail">
+      <button type="button" class="photo-thumb-del" title="Remove photo">&times;</button>
+    `;
+    div.querySelector(".photo-thumb-del").addEventListener("click", () => {
+      state.photos.splice(idx, 1);
+      renderPhotoThumbnails();
+    });
+    photoThumbnails.appendChild(div);
+  });
+}
+
+// Create celebration submission
+btnCreateLink.addEventListener("click", async () => {
+  const nameVal = document.getElementById("rec-name").value.trim();
+  if (!nameVal) {
+    alert("Please enter the recipient's name!");
+    document.getElementById("rec-name").focus();
+    return;
+  }
+
+  const selectedOcc = OCCASION_CATEGORIES
+    .flatMap(c => c.occasions)
+    .find(o => o.id === state.activeOccasionId);
+
+  const payload = {
+    name: nameVal,
+    category: state.activeCategory,
+    occasionId: state.activeOccasionId,
+    occasionName: (selectedOcc && selectedOcc.name) || "Celebration",
+    relationship: recRelationship.value,
+    language: recLanguage.value,
+    senderName: document.getElementById("sender-name").value.trim(),
+    personalNote: document.getElementById("personal-note").value.trim(),
+    date: document.getElementById("event-date").value,
+    password: document.getElementById("custom-password").value.trim(),
+    galleryMode: document.getElementById("gallery-mode").value,
+    musicTrack: state.selectedTrackId,
+    photos: state.photos,
+    messages: {
+      welcome: msgWelcome.value.trim(),
+      wish: msgWish.value.trim(),
+      activity: msgActivity.value.trim(),
+      final: msgFinal.value.trim()
+    }
+  };
+
+  btnCreateLink.disabled = true;
+  btnCreateLink.innerHTML = "<span>⏳</span> Generating 3D Surprise...";
+
+  try {
+    const res = await fetch("/api/celebrations", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+    if (!res.ok || !data.success) throw new Error(data.error || "Failed to save celebration.");
+
+    const fullUrl = `${window.location.origin}/4thday.html?id=${data.id}`;
+    generatedUrl.value = fullUrl;
+    btnPreviewUrl.href = fullUrl;
+
+    const waText = encodeURIComponent(`Hey ${nameVal}! I crafted a special 3D celebration surprise just for you: ${fullUrl}`);
+    btnWhatsappShare.href = `https://api.whatsapp.com/send?text=${waText}`;
+
+    resultBox.classList.add("show");
+    resultBox.scrollIntoView({ behavior: "smooth" });
+    loadCelebrationsList();
+  } catch (err) {
+    alert(err.message || "Could not generate link. Ensure server.js is running.");
+  } finally {
+    btnCreateLink.disabled = false;
+    btnCreateLink.innerHTML = "<span>✦</span> Generate 3D Celebration Surprise Link <span>➜</span>";
+  }
+});
+
+btnCopyUrl.addEventListener("click", () => {
+  if (!generatedUrl.value) return;
+  navigator.clipboard.writeText(generatedUrl.value).then(() => {
+    btnCopyUrl.innerHTML = "<span>✓</span> Copied!";
+    setTimeout(() => { btnCopyUrl.innerHTML = "<span>📋</span> Copy Link"; }, 2500);
+  });
+});
+
+btnCreateAnother.addEventListener("click", () => {
+  resultBox.classList.remove("show");
+  document.getElementById("rec-name").value = "";
+  document.getElementById("sender-name").value = "";
+  document.getElementById("personal-note").value = "";
+  state.photos = [];
+  renderPhotoThumbnails();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// View Switching
+tabCreate.addEventListener("click", () => {
+  tabCreate.classList.add("active");
+  tabManage.classList.remove("active");
+  viewCreate.style.display = "block";
+  viewManage.style.display = "none";
+});
+
+tabManage.addEventListener("click", () => {
+  tabManage.classList.add("active");
+  tabCreate.classList.remove("active");
+  viewCreate.style.display = "none";
+  viewManage.style.display = "block";
+  loadCelebrationsList();
+});
+
+// Fetch saved celebrations
+async function loadCelebrationsList() {
+  try {
+    const res = await fetch("/api/celebrations");
+    const data = await res.json();
+    if (!data.success) return;
+
+    celebrationsTbody.innerHTML = "";
+    savedCount.textContent = data.celebrations.length;
+
+    data.celebrations.forEach(c => {
+      const tr = document.createElement("tr");
+
+      const tdName = document.createElement("td");
+      tdName.style.cssText = "font-weight:600; color:#fff;";
+      tdName.textContent = c.name || "";
+
+      const tdOcc = document.createElement("td");
+      tdOcc.textContent = c.occasionName || "";
+
+      const tdRel = document.createElement("td");
+      tdRel.textContent = c.relationship || "";
+
+      const tdDate = document.createElement("td");
+      tdDate.textContent = c.createdAt ? new Date(c.createdAt).toLocaleDateString() : "";
+
+      const tdPhotos = document.createElement("td");
+      tdPhotos.textContent = `${c.photoCount || 0} photo(s)`;
+
+      const tdActions = document.createElement("td");
+      const viewLink = document.createElement("a");
+      viewLink.href = `/4thday.html?id=${encodeURIComponent(c.id)}`;
+      viewLink.target = "_blank";
+      viewLink.className = "btn-action";
+      viewLink.style.cssText = "padding:4px 10px; font-size:11px; margin-right:6px;";
+      viewLink.textContent = "View";
+
+      const copyBtn = document.createElement("button");
+      copyBtn.type = "button";
+      copyBtn.className = "btn-action";
+      copyBtn.style.cssText = "padding:4px 10px; font-size:11px;";
+      copyBtn.textContent = "Copy";
+      copyBtn.addEventListener("click", () => copySavedUrl(c.id));
+
+      tdActions.appendChild(viewLink);
+      tdActions.appendChild(copyBtn);
+
+      tr.appendChild(tdName);
+      tr.appendChild(tdOcc);
+      tr.appendChild(tdRel);
+      tr.appendChild(tdDate);
+      tr.appendChild(tdPhotos);
+      tr.appendChild(tdActions);
+
+      celebrationsTbody.appendChild(tr);
+    });
+  } catch (err) {
+    console.error("Could not load celebrations:", err);
+  }
+}
+
+window.copySavedUrl = function(id) {
+  const u = `${window.location.origin}/4thday.html?id=${id}`;
+  navigator.clipboard.writeText(u).then(() => alert("Copied surprise URL to clipboard!"));
+};
+
+// Initial setup
+initCategoryFilter();
+renderOccasions();
+updateRelationshipOptions();
+renderMusicTracks();
+loadCelebrationsList();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "celebration-surprise-platform",
+  "version": "1.0.0",
+  "description": "Premium 3D Celebration, Birthday & Surprise Website Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "celebration",
+    "birthday",
+    "surprise",
+    "3d",
+    "interactive"
+  ],
+  "author": "Adarshyadav24-cyber",
+  "license": "MIT"
+}

@@ -1,0 +1,425 @@
+{
+  "7d13ae3816be": {
+    "id": "7d13ae3816be",
+    "createdAt": "2026-10-29T17:58:28.667Z",
+    "name": "Pooja",
+    "category": "family",
+    "occasionId": "bday-sister",
+    "occasionName": "Sister's Birthday",
+    "relationship": "Sister",
+    "language": "hinglish",
+    "senderName": "Rahul",
+    "personalNote": "Always keep smiling and achieving your dreams!",
+    "date": "",
+    "theme": {
+      "primary": "#ec4899",
+      "secondary": "#6366f1",
+      "accent": "#fef08a",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4a0d35 0%, #140520 75%)",
+      "glow": "rgba(236, 72, 153, 0.5)"
+    },
+    "activity": "envelope-letter",
+    "musicTrack": "track-bday-chime",
+    "galleryMode": "3d-carousel",
+    "photos": [],
+    "messages": {
+      "welcome": "Mother's Day ki dher saari shubhkaamnayein! Aaj ka din sirf aapke naam. May this surprise bring a genuine, radiant smile to your face!",
+      "wish": "Aapki life hamesha khushiyon, achhi sehat, exciting adventures aur success se bhari rahe. Jo bhi aapne socha hai, woh sab poora ho!",
+      "card": "Dil se nikli shubhkaamnayein on Mother's Day! Always keep smiling like a star.",
+      "activity": "Apni favourite smile ke saath is celebration moment ko dil se enjoy kijiye!",
+      "surprise": "Aapki presence har din ko khoobsurat bana deti hai. Thank you for being so wonderful.",
+      "final": "Wishing you lots of love, success aur endless khushiyan. Happy Mother's Day to you! 🎉"
+    }
+  },
+  "9657bb22cfb1": {
+    "id": "9657bb22cfb1",
+    "createdAt": "2026-10-29T18:02:03.390Z",
+    "name": "Adarsh Yadav",
+    "category": "birthdays",
+    "occasionId": "bday-bestfriend",
+    "occasionName": "Best Friend Birthday",
+    "relationship": "Brother",
+    "language": "hinglish",
+    "senderName": "Vikas",
+    "personalNote": "",
+    "date": "2026-10-29",
+    "theme": {
+      "primary": "#ff4b98",
+      "secondary": "#a855f7",
+      "accent": "#ffd166",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4a154b 0%, #170b28 75%)",
+      "glow": "rgba(255, 75, 152, 0.5)"
+    },
+    "activity": "cake-cutting",
+    "musicTrack": "track-bday-chime",
+    "galleryMode": "3d-cube-frames",
+    "photos": [
+      {
+        "id": "p-1",
+        "url": "/uploads/9657bb22cfb1-1.png",
+        "caption": "",
+        "date": "",
+        "isCover": true
+      }
+    ],
+    "messages": {
+      "welcome": "Best Friend Birthday ki dher saari shubhkaamnayein! Aaj ka din sirf aapke naam. May this surprise bring a genuine, radiant smile to your face!",
+      "wish": "Aapki life hamesha khushiyon, achhi sehat, exciting adventures aur success se bhari rahe. Jo bhi aapne socha hai, woh sab poora ho!",
+      "card": "Dil se nikli shubhkaamnayein on Best Friend Birthday! Always keep smiling like a star.",
+      "activity": "Apni favourite smile ke saath is celebration moment ko dil se enjoy kijiye!",
+      "surprise": "Aapki presence har din ko khoobsurat bana deti hai. Thank you for being so wonderful.",
+      "final": "Wishing you lots of love, success aur endless khushiyan. Happy Best Friend Birthday to you! 🎉"
+    }
+  },
+  "589a3cc34e3d": {
+    "id": "589a3cc34e3d",
+    "createdAt": "2026-10-29T18:52:00.725Z",
+    "name": "Adarsh Yadav",
+    "category": "birthdays",
+    "occasionId": "bday-general",
+    "occasionName": "Birthday Celebration",
+    "relationship": "Brother",
+    "language": "en",
+    "senderName": "vikas",
+    "personalNote": "",
+    "date": "",
+    "theme": {
+      "primary": "#ff4b98",
+      "secondary": "#a855f7",
+      "accent": "#ffd166",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4a154b 0%, #170b28 75%)",
+      "glow": "rgba(255, 75, 152, 0.5)"
+    },
+    "activity": "cake-cutting",
+    "musicTrack": "track-bday-chime",
+    "galleryMode": "3d-carousel",
+    "photos": [],
+    "messages": {
+      "welcome": "Sending you the warmest celebration on this Birthday Celebration! Today is dedicated to honoring you and making ordinary moments feel truly magical.",
+      "wish": "May this special occasion bring you immense joy, radiant health, deep peace, and dreams that unfold into beautiful reality. You deserve the absolute best!",
+      "card": "A heartfelt tribute on Birthday Celebration. Keep shining, smiling, and inspiring everyone around you!",
+      "activity": "Take a moment to enjoy your interactive celebration — a special memory made just for you!",
+      "surprise": "Behind every sparkling star is a prayer: may your footsteps always be surrounded by love, warmth, and lifelong happiness.",
+      "final": "May your journey ahead be blessed with countless reasons to smile. Once again, Happy Birthday Celebration! ✨"
+    }
+  },
+  "17d1b6d2b4cd": {
+    "id": "17d1b6d2b4cd",
+    "createdAt": "2026-10-29T18:58:11.604Z",
+    "name": "Ankit Yadav",
+    "category": "anniversaries",
+    "occasionId": "anni-long-distance",
+    "occasionName": "Long-Distance Relationship Anniversary",
+    "relationship": "Couple",
+    "language": "en",
+    "senderName": "Vishal",
+    "personalNote": "",
+    "date": "2026-10-29",
+    "theme": {
+      "primary": "#d97706",
+      "secondary": "#e11d48",
+      "accent": "#fde68a",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #3e1f07 0%, #130a03 75%)",
+      "glow": "rgba(217, 119, 6, 0.5)"
+    },
+    "activity": "envelope-letter",
+    "musicTrack": "track-gentle",
+    "galleryMode": "3d-cube-frames",
+    "photos": [
+      {
+        "id": "p-1",
+        "url": "/uploads/17d1b6d2b4cd-1.jpg",
+        "caption": "",
+        "date": "",
+        "isCover": true
+      },
+      {
+        "id": "p-2",
+        "url": "/uploads/17d1b6d2b4cd-2.jpg",
+        "caption": "",
+        "date": "",
+        "isCover": false
+      }
+    ],
+    "messages": {
+      "welcome": "Sending you the warmest celebration on this Long-Distance Relationship Anniversary! Today is dedicated to honoring you and making ordinary moments feel truly magical.",
+      "wish": "May this special occasion bring you immense joy, radiant health, deep peace, and dreams that unfold into beautiful reality. You deserve the absolute best!",
+      "card": "A heartfelt tribute on Long-Distance Relationship Anniversary. Keep shining, smiling, and inspiring everyone around you!",
+      "activity": "Take a moment to enjoy your interactive celebration — a special memory made just for you!",
+      "surprise": "Behind every sparkling star is a prayer: may your footsteps always be surrounded by love, warmth, and lifelong happiness.",
+      "final": "May your journey ahead be blessed with countless reasons to smile. Once again, Happy Long-Distance Relationship Anniversary! ✨"
+    }
+  },
+  "b60a1fd833a9": {
+    "id": "b60a1fd833a9",
+    "createdAt": "2026-10-29T19:04:20.707Z",
+    "name": "Nitin Yadav",
+    "category": "birthdays",
+    "occasionId": "bday-partner",
+    "occasionName": "Partner's Birthday",
+    "relationship": "Partner",
+    "language": "en",
+    "senderName": "Ankit yadav",
+    "personalNote": "Happy Birthday Bro!",
+    "date": "2026-10-30",
+    "theme": {
+      "primary": "#ff4b98",
+      "secondary": "#a855f7",
+      "accent": "#ffd166",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4a154b 0%, #170b28 75%)",
+      "glow": "rgba(255, 75, 152, 0.5)"
+    },
+    "activity": "cake-cutting",
+    "musicTrack": "track-gentle",
+    "galleryMode": "3d-carousel",
+    "photos": [
+      {
+        "id": "p-1",
+        "url": "/uploads/b60a1fd833a9-1.jpg",
+        "caption": "",
+        "date": "",
+        "isCover": true
+      }
+    ],
+    "messages": {
+      "welcome": "Sending you the warmest celebration on this Partner's Birthday! Today is dedicated to honoring you and making ordinary moments feel truly magical.",
+      "wish": "May this special occasion bring you immense joy, radiant health, deep peace, and dreams that unfold into beautiful reality. You deserve the absolute best!",
+      "card": "A heartfelt tribute on Partner's Birthday. Keep shining, smiling, and inspiring everyone around you!",
+      "activity": "Take a moment to enjoy your interactive celebration — a special memory made just for you!",
+      "surprise": "Behind every sparkling star is a prayer: may your footsteps always be surrounded by love, warmth, and lifelong happiness.",
+      "final": "May your journey ahead be blessed with countless reasons to smile. Once again, Happy Partner's Birthday! ✨"
+    }
+  },
+  "ff6999cd02d9": {
+    "id": "ff6999cd02d9",
+    "createdAt": "2026-10-29T19:09:01.838Z",
+    "name": "Nitin Yadav",
+    "category": "birthdays",
+    "occasionId": "bday-partner",
+    "occasionName": "Partner's Birthday",
+    "relationship": "Partner",
+    "language": "en",
+    "senderName": "Ankit yadav",
+    "personalNote": "Happy Birthday Bro!",
+    "date": "2026-10-30",
+    "theme": {
+      "primary": "#ff4b98",
+      "secondary": "#a855f7",
+      "accent": "#ffd166",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4a154b 0%, #170b28 75%)",
+      "glow": "rgba(255, 75, 152, 0.5)"
+    },
+    "activity": "cake-cutting",
+    "musicTrack": "track-gentle",
+    "galleryMode": "3d-carousel",
+    "photos": [
+      {
+        "id": "p-1",
+        "url": "/uploads/ff6999cd02d9-1.jpg",
+        "caption": "",
+        "date": "",
+        "isCover": true
+      }
+    ],
+    "messages": {
+      "welcome": "Sending you the warmest celebration on this Partner's Birthday! Today is dedicated to honoring you and making ordinary moments feel truly magical.",
+      "wish": "May this special occasion bring you immense joy, radiant health, deep peace, and dreams that unfold into beautiful reality. You deserve the absolute best!",
+      "card": "A heartfelt tribute on Partner's Birthday. Keep shining, smiling, and inspiring everyone around you!",
+      "activity": "Take a moment to enjoy your interactive celebration — a special memory made just for you!",
+      "surprise": "Behind every sparkling star is a prayer: may your footsteps always be surrounded by love, warmth, and lifelong happiness.",
+      "final": "May your journey ahead be blessed with countless reasons to smile. Once again, Happy Partner's Birthday! ✨"
+    }
+  },
+  "573f840b16f5": {
+    "id": "573f840b16f5",
+    "createdAt": "2026-10-29T20:01:03.141Z",
+    "name": "Priya",
+    "category": "family",
+    "occasionId": "bday-sister",
+    "occasionName": "Sister's Birthday",
+    "relationship": "Sister",
+    "language": "en",
+    "senderName": "Rohan",
+    "personalNote": "You are the best sister in the world!",
+    "date": "",
+    "theme": {
+      "primary": "#ec4899",
+      "secondary": "#6366f1",
+      "accent": "#fef08a",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4a0d35 0%, #140520 75%)",
+      "glow": "rgba(236, 72, 153, 0.5)"
+    },
+    "activity": "envelope-letter",
+    "musicTrack": "track-bday-chime",
+    "galleryMode": "3d-carousel",
+    "photos": [],
+    "messages": {
+      "welcome": "Sending you the warmest celebration on this Mother's Day! Today is dedicated to honoring you and making ordinary moments feel truly magical.",
+      "wish": "May this special occasion bring you immense joy, radiant health, deep peace, and dreams that unfold into beautiful reality. You deserve the absolute best!",
+      "card": "A heartfelt tribute on Mother's Day. Keep shining, smiling, and inspiring everyone around you!",
+      "activity": "Take a moment to enjoy your interactive celebration — a special memory made just for you!",
+      "surprise": "Behind every sparkling star is a prayer: may your footsteps always be surrounded by love, warmth, and lifelong happiness.",
+      "final": "May your journey ahead be blessed with countless reasons to smile. Once again, Happy Mother's Day! ✨"
+    }
+  },
+  "3cf1c1bdd7ea": {
+    "id": "3cf1c1bdd7ea",
+    "createdAt": "2026-10-29T20:01:14.174Z",
+    "name": "Priya",
+    "category": "family",
+    "occasionId": "bday-sister",
+    "occasionName": "Sister's Birthday",
+    "relationship": "Sister",
+    "language": "en",
+    "senderName": "Rohan",
+    "personalNote": "You are the best sister in the world!",
+    "date": "",
+    "theme": {
+      "primary": "#ec4899",
+      "secondary": "#6366f1",
+      "accent": "#fef08a",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4a0d35 0%, #140520 75%)",
+      "glow": "rgba(236, 72, 153, 0.5)"
+    },
+    "activity": "envelope-letter",
+    "musicTrack": "track-bday-chime",
+    "galleryMode": "3d-carousel",
+    "photos": [],
+    "messages": {
+      "welcome": "Sending you the warmest celebration on this Mother's Day! Today is dedicated to honoring you and making ordinary moments feel truly magical.",
+      "wish": "May this special occasion bring you immense joy, radiant health, deep peace, and dreams that unfold into beautiful reality. You deserve the absolute best!",
+      "card": "A heartfelt tribute on Mother's Day. Keep shining, smiling, and inspiring everyone around you!",
+      "activity": "Take a moment to enjoy your interactive celebration — a special memory made just for you!",
+      "surprise": "Behind every sparkling star is a prayer: may your footsteps always be surrounded by love, warmth, and lifelong happiness.",
+      "final": "May your journey ahead be blessed with countless reasons to smile. Once again, Happy Mother's Day! ✨"
+    }
+  },
+  "1d04db528635": {
+    "id": "1d04db528635",
+    "createdAt": "2026-10-29T20:01:14.178Z",
+    "name": "Priya",
+    "category": "valentines",
+    "occasionId": "val-valentines",
+    "occasionName": "Valentine's Day",
+    "relationship": "Dear Special Person",
+    "language": "en",
+    "senderName": "",
+    "personalNote": "",
+    "date": "",
+    "theme": {
+      "primary": "#e11d48",
+      "secondary": "#be185d",
+      "accent": "#fecdd3",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4c0519 0%, #180209 75%)",
+      "glow": "rgba(225, 29, 72, 0.5)"
+    },
+    "activity": "rose-bloom",
+    "musicTrack": "track-romantic",
+    "galleryMode": "3d-carousel",
+    "photos": [],
+    "messages": {
+      "welcome": "Sending you the warmest celebration on this Valentine's Day (Feb 14)! Today is dedicated to honoring you and making ordinary moments feel truly magical.",
+      "wish": "May this special occasion bring you immense joy, radiant health, deep peace, and dreams that unfold into beautiful reality. You deserve the absolute best!",
+      "card": "A heartfelt tribute on Valentine's Day (Feb 14). Keep shining, smiling, and inspiring everyone around you!",
+      "activity": "Take a moment to enjoy your interactive celebration — a special memory made just for you!",
+      "surprise": "Behind every sparkling star is a prayer: may your footsteps always be surrounded by love, warmth, and lifelong happiness.",
+      "final": "May your journey ahead be blessed with countless reasons to smile. Once again, Happy Valentine's Day (Feb 14)! ✨"
+    }
+  },
+  "f47146173bd3": {
+    "id": "f47146173bd3",
+    "createdAt": "2026-10-29T20:03:04.738Z",
+    "name": "Adarsh Yadav",
+    "category": "birthdays",
+    "occasionId": "bday-general",
+    "occasionName": "Birthday Celebration",
+    "relationship": "Brother",
+    "language": "hinglish",
+    "senderName": "",
+    "personalNote": "",
+    "date": "",
+    "theme": {
+      "primary": "#ff4b98",
+      "secondary": "#a855f7",
+      "accent": "#ffd166",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4a154b 0%, #170b28 75%)",
+      "glow": "rgba(255, 75, 152, 0.5)"
+    },
+    "activity": "cake-cutting",
+    "musicTrack": "track-bday-chime",
+    "galleryMode": "3d-carousel",
+    "photos": [],
+    "messages": {
+      "welcome": "Birthday Celebration ki dher saari shubhkaamnayein! Aaj ka din sirf aapke naam. May this surprise bring a genuine, radiant smile to your face!",
+      "wish": "Aapki life hamesha khushiyon, achhi sehat, exciting adventures aur success se bhari rahe. Jo bhi aapne socha hai, woh sab poora ho!",
+      "card": "Dil se nikli shubhkaamnayein on Birthday Celebration! Always keep smiling like a star.",
+      "activity": "Apni favourite smile ke saath is celebration moment ko dil se enjoy kijiye!",
+      "surprise": "Aapki presence har din ko khoobsurat bana deti hai. Thank you for being so wonderful.",
+      "final": "Wishing you lots of love, success aur endless khushiyan. Happy Birthday Celebration to you! 🎉"
+    }
+  },
+  "1cb814dffcfa": {
+    "id": "1cb814dffcfa",
+    "createdAt": "2026-10-29T20:25:23.949Z",
+    "name": "Ananya",
+    "category": "birthdays",
+    "occasionId": "bday-general",
+    "occasionName": "Birthday Celebration",
+    "relationship": "Best Friend",
+    "language": "en",
+    "senderName": "Kabir",
+    "personalNote": "May your day be filled with delicious cake, sparkling balloons, and laughter!",
+    "date": "",
+    "theme": {
+      "primary": "#ff4b98",
+      "secondary": "#a855f7",
+      "accent": "#ffd166",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4a154b 0%, #170b28 75%)",
+      "glow": "rgba(255, 75, 152, 0.5)"
+    },
+    "activity": "cake-cutting",
+    "musicTrack": "track-bday-chime",
+    "galleryMode": "3d-carousel",
+    "photos": [],
+    "messages": {
+      "welcome": "Sending you the warmest celebration on this Birthday Celebration! Today is dedicated to honoring you and making ordinary moments feel truly magical.",
+      "wish": "May this special occasion bring you immense joy, radiant health, deep peace, and dreams that unfold into beautiful reality. You deserve the absolute best!",
+      "card": "A heartfelt tribute on Birthday Celebration. Keep shining, smiling, and inspiring everyone around you!",
+      "activity": "Take a moment to enjoy your interactive celebration — a special memory made just for you!",
+      "surprise": "Behind every sparkling star is a prayer: may your footsteps always be surrounded by love, warmth, and lifelong happiness.",
+      "final": "May your journey ahead be blessed with countless reasons to smile. Once again, Happy Birthday Celebration! ✨"
+    }
+  },
+  "7a20067803fe": {
+    "id": "7a20067803fe",
+    "createdAt": "2026-10-29T20:26:29.376Z",
+    "name": "Adarsh Yadav",
+    "category": "birthdays",
+    "occasionId": "bday-general",
+    "occasionName": "Birthday Celebration",
+    "relationship": "Brother",
+    "language": "hinglish",
+    "senderName": "",
+    "personalNote": "",
+    "date": "",
+    "theme": {
+      "primary": "#ff4b98",
+      "secondary": "#a855f7",
+      "accent": "#ffd166",
+      "bgGrad": "radial-gradient(ellipse at 50% 25%, #4a154b 0%, #170b28 75%)",
+      "glow": "rgba(255, 75, 152, 0.5)"
+    },
+    "activity": "cake-cutting",
+    "musicTrack": "track-bday-chime",
+    "galleryMode": "3d-carousel",
+    "photos": [],
+    "messages": {
+      "welcome": "Birthday Celebration ki dher saari shubhkaamnayein! Aaj ka din sirf aapke naam. May this surprise bring a genuine, radiant smile to your face!",
+      "wish": "Aapki life hamesha khushiyon, achhi sehat, exciting adventures aur success se bhari rahe. Jo bhi aapne socha hai, woh sab poora ho!",
+      "card": "Dil se nikli shubhkaamnayein on Birthday Celebration! Always keep smiling like a star.",
+      "activity": "Apni favourite smile ke saath is celebration moment ko dil se enjoy kijiye!",
+      "surprise": "Aapki presence har din ko khoobsurat bana deti hai. Thank you for being so wonderful.",
+      "final": "Wishing you lots of love, success aur endless khushiyan. Happy Birthday Celebration to you! 🎉"
+    }
+  }
+}

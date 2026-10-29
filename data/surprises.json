@@ -1,0 +1,66 @@
+{
+  "41b2e74250af": {
+    "id": "41b2e74250af",
+    "createdAt": "2026-10-29T09:23:07.220Z",
+    "name": "Riya",
+    "category": "Family",
+    "relationship": "Sister",
+    "senderName": "Aman",
+    "personalNote": "Always keep smiling, my wonderful sister!",
+    "photoUrl": "/uploads/41b2e74250af.png",
+    "messages": {
+      "welcome": "Happy Birthday, meri pyari Sister! 💖 Tumhari smile ghar ko aur khoobsurat bana deti hai. Aaj ka din tumhari happiness, tumhare dreams aur tumhari beautiful personality ko celebrate karne ke liye hai!",
+      "wish": "May every dream you hold close to your heart move one step closer to reality. Tum hamesha confident, happy aur apne unique andaaz mein shine karti raho. You deserve love, respect, success, and countless beautiful memories!",
+      "cake": "Birthday queen, your cake is ready! 🎂 Aaj worries ko side mein rakho, smile karo aur apne birthday moment ko dil se enjoy karo!",
+      "final": "Keep smiling, meri pyari Sister. Tumhari zindagi beautiful surprises, genuine happiness aur wonderful achievements se bhari rahe. Happy Birthday! 💕"
+    }
+  },
+  "39e2c503eaea": {
+    "id": "39e2c503eaea",
+    "createdAt": "2026-10-29T09:23:07.223Z",
+    "name": "Kabir",
+    "category": "Friend",
+    "relationship": "Best Friend",
+    "senderName": "Sameer",
+    "personalNote": "To endless adventures, buddy!",
+    "photoUrl": null,
+    "messages": {
+      "welcome": "Happy Birthday, Bestie! 🥳 Aaj tumhara day hai! Thank you for the laughter, random conversations, crazy memories, and all those moments that make our friendship special. Today, the spotlight is all yours!",
+      "wish": "May your biggest dreams become real, your toughest days become easier, and your happiest moments become unforgettable. I hope life gives you every reason to smile and people who appreciate the amazing person you are. More adventures and memories await us!",
+      "cake": "Bestie, cake time! 🎂 Make a birthday wish, smile like crazy, and enjoy your main-character moment. Today is all about celebrating YOU!",
+      "final": "Here's to more laughter, more adventures, more success, and a friendship full of beautiful memories. Keep being your wonderful self. Happy Birthday, Bestie!"
+    }
+  },
+  "1be603141cca": {
+    "id": "1be603141cca",
+    "createdAt": "2026-10-29T09:23:07.225Z",
+    "name": "Sneha",
+    "category": "Dear Special Person",
+    "relationship": "Dear Special Person",
+    "senderName": "Yours",
+    "personalNote": "You make every day feel like magic.",
+    "photoUrl": null,
+    "messages": {
+      "welcome": "Happy Birthday to a truly special soul! 💖 Today is a little reminder that your presence can make ordinary moments feel extraordinary. I hope this surprise brings a genuine smile to your face and makes you feel appreciated.",
+      "wish": "May your life be filled with the kind of happiness that stays, the peace that makes your heart feel light, and the opportunities that bring your dreams closer. Keep being the wonderful person you are. You deserve kindness, beautiful memories, and countless reasons to smile.",
+      "cake": "Your special birthday moment is here! 🎂 Take a deep breath, make a wish from your heart, and enjoy this little celebration made especially for you.",
+      "final": "Some people make the world a little brighter simply by being themselves. I hope this new year of your life brings you unexpected happiness, meaningful moments, and beautiful memories. Happy Birthday, Beautiful Soul! 💖"
+    }
+  },
+  "08826dcbf002": {
+    "id": "08826dcbf002",
+    "createdAt": "2026-10-29T09:31:38.673Z",
+    "name": "Adarsh",
+    "category": "Friend",
+    "relationship": "Close Friend",
+    "senderName": "",
+    "personalNote": "",
+    "photoUrl": "/uploads/08826dcbf002.png",
+    "messages": {
+      "welcome": "Happy Birthday, my dear friend! 🎉 Some people make ordinary days memorable just by being around, and you're one of them. Today, I hope you feel appreciated, celebrated, and genuinely happy!",
+      "wish": "May this new year of your life bring exciting opportunities, personal growth, wonderful friendships, and the courage to chase every dream. You deserve a future filled with happiness, confidence, and meaningful moments.",
+      "cake": "Your birthday cake is ready! 🎂 Take a moment to make a wish, enjoy the celebration, and remember that today is your time to shine!",
+      "final": "May your journey ahead be filled with good people, great memories, and achievements that make you proud. Happy Birthday, my dear friend!"
+    }
+  }
+}
